@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class="main-header">
+        <div class="main-header__content">
+          <nav class="nav">
+            <a href="index.html">
+              <img class="logo" src="img/logo.svg" alt="логотип сайта Седона" width="138" height="64">
+            </a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">О Седоне</a>
+              </li>
+              <li class="nav__item">
+                <a href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-menu">
+            <ul class="user-menu__list">
+              <li class="user-menu__item">
+                <a href="#">
+                  <img src="img/icon-search.svg" alt="иконка ввиде лупы для поиска по сайту">
+                </a>
+              </li>
+              <li class="user-menu__item">
+                <a href="#">
+                  <img src="img/icon-heart.svg" alt="иконка ввиде сердца для лайков">
+                </a>
+              </li>
+            </ul>
+            <div>
+              <span class="visually-hidden">Кнопка для поиска гостиниц в Седоне</span>
+              <button type="button">Хочу сюда</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-catalog">
+        <section class="filter">
+          <h1 class="filter__title">Гостиницы Седоны</h1>
+          <div class="breadcrumbs">
+            <a href="index.html">
+              <img class="breadcrumbs-img" src="img/icon-breadcrumbs.svg" alt="Иконка домика для перехода на главную страницу" width="12" height="12">
+            </a>
+            <p class="breadcrumbs-arrow">&rsaquo;</p>
+            <p class="breadcrumbs-name">Гостиницы</p>
+          </div>
+          <form class="filter__form" action="#" method="post">
+            <div class="filter__left">
+              <div class="infrastructure">
+                <p class="infrastructure__title">Инфраструктура:</p>
+                <ul class="infrastructure__list">
+                  <li class="infrastructure__item">
+                    <label>
+                      <input class="infrastructure__item-input" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="infrastructure__item">
+                    <label>
+                      <input class="infrastructure__item-input" type="checkbox" name="parking-space" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="infrastructure__item">
+                    <label>
+                      <input class="infrastructure__item-input" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="type-housing">
+                <p class="type-housing__title">Тип жилья:</p>
+                <ul class="type-housing__list">
+                  <li class="type-housing__item">
+                    <label>
+                      <input class="type-housing__input" type="radio" name="type-housing" value="hotel" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="type-housing__item">
+                    <label>
+                      <input class="type-housing__input" type="radio" name="type-housing" value="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="type-housing__item">
+                    <label>
+                      <input class="type-housing__input" type="radio" name="type-housing" value="apartments">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter__right">
+              <div class="cost">
+                <p class="cost__title">Стоимость, Р:</p>
+                <ul class="cost__list">
+                  <li class="cost__item cost__item-from">
+                    <input class="cost__input" type="text" value="0">
+                    <span>от</span>
+                  </li>
+                  <li class="cost__item cost__item-to">
+                    <input class="cost__input" type="text" value="9000">
+                    <span>до</span>
+                  </li>
+                </ul>
+                <div class="cost__range">
+                  <input type="range">
+                </div>
+                <div class="cost__control">
+                  <button class="cost__control-apply" type="button">Применить</button>
+                  <button class="cost__control-reset" type="reset">Сбросить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+
+  </body>
+</html>
