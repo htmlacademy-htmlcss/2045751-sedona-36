@@ -12,7 +12,7 @@
           <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="138" height="64">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Главная</a>
+              <a current>Главная</a>
             </li>
             <li class="nav__item">
               <a href="#">О Седоне</a>
@@ -26,18 +26,18 @@
           <ul class="user-menu__list">
             <li class="user-menu__item">
               <a href="#">
-                <img src="images/icon-search.svg" alt="иконка ввиде лупы для поиска по сайту">
+                <span class="visually-hidden">Иконка ввиде лупы для поиска по сайту</span>
               </a>
             </li>
             <li class="user-menu__item">
               <a href="#">
-                <img src="images/icon-heart.svg" alt="иконка ввиде сердца для лайков">
+                <span class="visually-hidden">Иконка ввиде сердца для лайков</span>
               </a>
             </li>
           </ul>
           <div>
             <span class="visually-hidden">Кнопка для поиска гостиниц в Седоне</span>
-            <button type="button">Хочу сюда</button>
+            <a href="#">Хочу сюда</a>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@
       <section class="subcribe">
         <h2 class="subcribe__title">Подпишитесь на рассылку</h2>
         <p class="subcribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subcribe__form" action="#" method="POST">
+        <form class="subcribe__form" action="//echo.htmlacademy.ru" method="POST">
           <input class="subcribe__form-input" type="text">
           <button class="subcribe__form-button" type="submit">Подписаться</button>
         </form>
