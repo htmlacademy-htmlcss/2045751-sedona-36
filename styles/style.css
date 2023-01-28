@@ -17,9 +17,7 @@ html {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
   padding: 0;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -40,3 +38,79 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Стилизация хедера */
+.main-header {
+  background-color: #ffffff;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.main-header__content {
+  border: 1px solid red;
+  display: flex;
+}
+
+.logo {
+  display: block;
+  margin-left: -2px;
+}
+
+.nav {
+  border: 1px solid green;
+  display: flex;
+}
+
+.nav__list {
+  border: 1px solid blue;
+  max-width: 339px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  margin-top: -3px;
+  margin-left: 42px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  padding-right: 27px;
+}
+
+.nav__item-link {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.user-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu__item-link {
+  display: block;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 28px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Конец стилизации хедера */
