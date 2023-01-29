@@ -39,7 +39,7 @@ body {
   overflow: hidden;
 }
 
-/* Стилизация хедера */
+/* Стилизация ХЕДЕРА */
 .main-header {
   min-height: 64px;
   background-color: #ffffff;
@@ -70,8 +70,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  margin-top: -3px;
-  margin-left: 42px;
+  margin-top: -4px;
+  margin-left: 43px;
   padding: 0;
   padding-top: 4px;
   list-style: none;
@@ -189,4 +189,37 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-/* Конец стилизации хедера */
+/* Конец стилизации ХЕДЕРА */
+
+/* Стилизация блока PROMO */
+.promo {
+  position: relative;
+  min-height: 485px;
+  background-image: url("../images/promo-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.promo:after {
+  content: "";
+  width: 100%;
+  height: 57px;
+  position: absolute;
+  background-image: url("../images/promo-decoration.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+}
+
+.promo__slogan {
+  position: absolute;
+  width: 458px;
+  height: 352px;
+  background-image: url("../images/promo-slogan.svg");
+  background-repeat: no-repeat;
+  left: 31%;
+  top: 50px;
+}
+/* Конец блока PROMO */
