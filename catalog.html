@@ -10,39 +10,40 @@
     <header class="main-header">
         <div class="main-header__content">
           <nav class="nav">
-            <a href="index.html">
-              <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="138" height="64">
-            </a>
+            <div class="logo">
+              <a href="index.html">
+                <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="140" height="70">
+              </a>
+            </div>
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="index.html">Главная</a>
+                <a class="nav__item-link" href="index.html">Главная</a>
               </li>
               <li class="nav__item">
-                <a href="#">О Седоне</a>
+                <a class="nav__item-link" href="#">О Седоне</a>
               </li>
               <li class="nav__item">
-                <a href="#">Гостиницы</a>
+                <a class="nav__item-link nav__item-link--active" href="#">Гостиницы</a>
               </li>
             </ul>
           </nav>
           <div class="user-menu">
             <ul class="user-menu__list">
-              <li class="user-menu__item">
-                <a href="#">
+              <li class="user-menu__item user-menu__item-search">
+                <a class="user-menu__item-link" href="#">
                   <span class="visually-hidden">Иконка ввиде лупы для поиска по сайту</span>
                 </a>
               </li>
-              <li class="user-menu__item">
-                <a href="#">
+              <li class="user-menu__item user-menu__item-heart">
+                <a class="user-menu__item-link" href="#">
                   <span class="visually-hidden">Иконка ввиде сердца для лайков</span>
+                  <span class="user-menu__count">12</span>
                 </a>
               </li>
             </ul>
-            <div>
-              <div>
-                <span class="visually-hidden">Кнопка для поиска гостиниц в Седоне</span>
-                <a href="#">Хочу сюда</a>
-              </div>
+            <div class="user-menu__button">
+              <span class="visually-hidden">Кнопка для поиска гостиниц в Седоне</span>
+              <a class="user-menu__link" href="#">Хочу сюда</a>
             </div>
           </div>
         </div>
