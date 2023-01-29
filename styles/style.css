@@ -1,12 +1,16 @@
 @font-face {
   font-family: 'PT Sans';
-  src: url('ptsans-400.woff2') format('woff2');
+  src: url('../fonts/ptsans-400.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('ptsans-700.woff2') format('woff2');
+  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -17,6 +21,7 @@ html {
 body {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 0;
   font-family: 'PT Sans', sans-serif;
@@ -41,10 +46,12 @@ body {
 
 /* Стилизация ХЕДЕРА */
 .main-header {
+  position: relative;
   min-height: 64px;
   background-color: #ffffff;
   padding-right: 70px;
   padding-left: 70px;
+  z-index: 1;
 }
 
 .main-header__content {
@@ -71,7 +78,7 @@ body {
   align-items: center;
   margin: 0;
   margin-top: -4px;
-  margin-left: 43px;
+  margin-left: 45px;
   padding: 0;
   padding-top: 4px;
   list-style: none;
@@ -83,7 +90,7 @@ body {
 }
 
 .nav__item:not(:nth-child(3n+3)) {
-  padding-right: 27px;
+  padding-right: 32px;
 }
 
 .nav__item-link {
@@ -92,7 +99,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   text-decoration: none;
   text-transform: capitalize;
@@ -105,7 +112,7 @@ body {
   height: 2px;
   background-color: #756257;
   position: absolute;
-  bottom: -20px;
+  bottom: -22px;
   left: 0;
 }
 
@@ -159,8 +166,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #7DB54F;
-  top: 10px;
-  right: 3px;
+  top: 13px;
+  right: 4px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -191,15 +198,15 @@ body {
 }
 /* Конец стилизации ХЕДЕРА */
 
-/* Стилизация блока PROMO */
+/* Стилизация PROMO */
 .promo {
   position: relative;
   min-height: 485px;
   background-image: url("../images/promo-photo.jpg");
+  background-color: #82B3D3;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: -1;
 }
 
 .promo:after {
@@ -220,6 +227,46 @@ body {
   background-image: url("../images/promo-slogan.svg");
   background-repeat: no-repeat;
   left: 31%;
-  top: 50px;
+  top: 52px;
 }
-/* Конец блока PROMO */
+/* Конец стилизации PROMO */
+
+/* Стилизация REASONS */
+.reasons {
+  padding-top: 70px;
+}
+
+.reasons__title {
+  width: 620px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 24px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reasons__text {
+  width: 651px;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reasons__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
