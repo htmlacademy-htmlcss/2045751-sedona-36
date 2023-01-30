@@ -283,6 +283,7 @@ body {
 }
 
 .reasons__item-content {
+  position: relative;
   width: 230px;
   margin: 0 auto;
   padding-top: 112px;
@@ -290,9 +291,20 @@ body {
   text-align: center;
 }
 
+.reasons__item-content:before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  background-color: #ffffff;
+  left: 50%;
+  top: 49%;
+  transform: translateX(-50%);
+}
+
 .reasons__item-content-photo {
-  padding-top: 101px;
-  padding-bottom: 101px;
+  padding-top: 102px;
+  padding-bottom: 102px;
   color: #ffffff;
 }
 
@@ -329,12 +341,41 @@ body {
 
 .reasons__list-nophoto {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.reasons__item-content-nophoto {
+  position: relative;
+}
 
+.reasons__item-content-nophoto:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 51%;
+}
 
+.reasons__item-text-nophoto {
+  color: #333333;
+}
 
+.reasons__item-nophoto--lighter {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reasons__item-nophoto--light {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.reasons__item-content--reverse {
+  order: 1;
+}
+
+.reasons__item-img--reverse {
+  background-image: url("../images/reasons-photo2.jpg");
+}
 /* Конец стилизации REASONS */
