@@ -3,40 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__content">
         <nav class="nav">
-          <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="138" height="64">
+          <div class="logo">
+            <img class="logo__img" src="images/logo.svg" alt="логотип сайта Седона" width="140" height="70">
+          </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Главная</a>
+              <a class="nav__item-link nav__item-link--active" href="#">Главная</a>
             </li>
             <li class="nav__item">
-              <a href="#">О Седоне</a>
+              <a class="nav__item-link" href="#">О седоне</a>
             </li>
             <li class="nav__item">
-              <a href="catalog.html">Гостиницы</a>
+              <a class="nav__item-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="user-menu">
           <ul class="user-menu__list">
-            <li class="user-menu__item">
-              <a href="#">
-                <img src="images/icon-search.svg" alt="иконка ввиде лупы для поиска по сайту">
+            <li class="user-menu__item user-menu__item-search">
+              <a class="user-menu__item-link" href="#">
+                <span class="visually-hidden">Иконка ввиде лупы для поиска по сайту</span>
               </a>
             </li>
-            <li class="user-menu__item">
-              <a href="#">
-                <img src="images/icon-heart.svg" alt="иконка ввиде сердца для лайков">
+            <li class="user-menu__item user-menu__item-heart">
+              <a class="user-menu__item-link" href="#">
+                <span class="visually-hidden">Иконка ввиде сердца для лайков</span>
+                <span class="user-menu__count">12</span>
               </a>
             </li>
           </ul>
-          <div>
+          <div class="user-menu__button">
             <span class="visually-hidden">Кнопка для поиска гостиниц в Седоне</span>
-            <button type="button">Хочу сюда</button>
+            <a class="user-menu__link" href="#">Хочу сюда!</a>
           </div>
         </div>
       </div>
@@ -45,46 +50,50 @@
     <main class="main-index">
       <section class="promo">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="promo__slogan" src="images/promo-slogan.svg" alt="Надпись добро пожаловать в Седону крупными буквами" width="458" height="352">
+        <span class="promo__slogan"></span>
       </section>
 
       <section class="reasons">
-        <h2 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="reasons__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="reasons__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="reasons__list">
-          <li class="reasons__item">
-            <div class="reasons__item-content">
+          <li class="reasons__item reasons__item-photo">
+            <div class="reasons__item-content reasons__item-content-photo">
               <h3 class="reasons__item-title">Настоящий городок</h3>
-              <p class="reasons__item-text">Седона - не аттракцион </p>
+              <p class="reasons__item-text">Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reasons__item-photo">
+            <div class="reasons__item-img">
               <span class="visually-hidden">Фото городка Седона</span>
             </div>
           </li>
-          <li class="reasons__item">
-            <div class="reasons__item-content">
-              <h3 class="reasons__item-title">Небольшая площадь</h3>
-              <p class="reasons__item-text">Все достопримечательности находятся очень близко</p>
-            </div>
+          <li>
+            <ul class="reasons__list-nophoto">
+              <li class="reasons__item reasons__item--lighter">
+                <div class="reasons__item-content reasons__item-content-nophoto">
+                  <h3 class="reasons__item-title reasons__item-title-nophoto">Небольшая площадь</h3>
+                  <p class="reasons__item-text">Все достопримечательности находятся очень близко</p>
+                </div>
+              </li>
+              <li class="reasons__item reasons__item--light">
+                <div class="reasons__item-content reasons__item-content-nophoto">
+                  <h3 class="reasons__item-title reasons__item-title-nophoto">Красивая дорога</h3>
+                  <p class="reasons__item-text reasons__item-text-nophoto">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+              </li>
+              <li class="reasons__item reasons__item--lighter">
+                <div class="reasons__item-content reasons__item-content-nophoto">
+                  <h3 class="reasons__item-title reasons__item-title-nophoto">Мало туристов</h3>
+                  <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
+              </li>
+            </ul>
           </li>
-          <li class="reasons__item">
-            <div class="reasons__item-content">
-              <h3 class="reasons__item-title">Красивая дорога</h3>
-              <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-          </li>
-          <li class="reasons__item">
-            <div class="reasons__item-content">
-              <h3 class="reasons__item-title">Мало туристов</h3>
-              <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
-            </div>
-          </li>
-          <li class="reasons__item">
-            <div class="reasons__item-content">
+          <li class="reasons__item reasons__item-photo">
+            <div class="reasons__item-content reasons__item-content-photo reasons__item-content--reverse">
               <h3 class="reasons__item-title">Там есть мост дьявола</h3>
               <p class="reasons__item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <div class="reasons__item-photo">
+            <div class="reasons__item-img reasons__item-img--reverse">
               <span class="visually-hidden">Фото моста дьявола</span>
             </div>
           </li>
@@ -95,20 +104,20 @@
         <h2 class="recommendations__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="recommendations__text">Опытный персонал и качественное обслуживание!</p>
         <ul class="recommendations__list">
-          <li class="recommendations__item">
-            <div class="recommendations__item-content">
+          <li class="recommendations__item recommendations__item--lighter">
+            <div class="recommendations__item-content recommendations__item-content-house">
               <h3 class="recommendations__item-title">Жилье</h3>
-              <p class="recommendations__item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="recommendations__item-text recommendations__item-text-house">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
           </li>
           <li class="recommendations__item">
-            <div class="recommendations__item-content">
+            <div class="recommendations__item-content recommendations__item-content-food">
               <h3 class="recommendations__item-title">Еда</h3>
               <p class="recommendations__item-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="recommendations__item">
-            <div class="recommendations__item-content">
+          <li class="recommendations__item recommendations__item--lighter">
+            <div class="recommendations__item-content recommendations__item-content-gift">
               <h3 class="recommendations__item-title">Сувениры</h3>
               <p class="recommendations__item-text">Не только китайского, но и настоящего местного производства!</p>
             </div>
@@ -117,15 +126,17 @@
       </section>
 
       <section class="search">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__item-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="catalog.html">Поиск гостиниц в Седоне</a>
+        <div class="search__content">
+          <h2 class="search__title">Заинтересовались?</h2>
+          <p class="search__item-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <a class="search__link" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subcribe">
         <h2 class="subcribe__title">Подпишитесь на рассылку</h2>
         <p class="subcribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subcribe__form" action="#" method="POST">
+        <form class="subcribe__form" action="//echo.htmlacademy.ru" method="POST">
           <input class="subcribe__form-input" type="text">
           <button class="subcribe__form-button" type="submit">Подписаться</button>
         </form>

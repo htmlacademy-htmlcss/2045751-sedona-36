@@ -3,42 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостиниц</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="main-header">
         <div class="main-header__content">
           <nav class="nav">
-            <a href="index.html">
-              <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="138" height="64">
-            </a>
+            <div class="logo">
+              <a href="index.html">
+                <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="140" height="70">
+              </a>
+            </div>
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="index.html">Главная</a>
+                <a class="nav__item-link" href="index.html">Главная</a>
               </li>
               <li class="nav__item">
-                <a href="#">О Седоне</a>
+                <a class="nav__item-link" href="#">О Седоне</a>
               </li>
               <li class="nav__item">
-                <a href="#">Гостиницы</a>
+                <a class="nav__item-link nav__item-link--active" href="#">Гостиницы</a>
               </li>
             </ul>
           </nav>
           <div class="user-menu">
             <ul class="user-menu__list">
-              <li class="user-menu__item">
-                <a href="#">
-                  <img src="images/icon-search.svg" alt="иконка ввиде лупы для поиска по сайту">
+              <li class="user-menu__item user-menu__item-search">
+                <a class="user-menu__item-link" href="#">
+                  <span class="visually-hidden">Иконка ввиде лупы для поиска по сайту</span>
                 </a>
               </li>
-              <li class="user-menu__item">
-                <a href="#">
-                  <img src="images/icon-heart.svg" alt="иконка ввиде сердца для лайков">
+              <li class="user-menu__item user-menu__item-heart">
+                <a class="user-menu__item-link" href="#">
+                  <span class="visually-hidden">Иконка ввиде сердца для лайков</span>
+                  <span class="user-menu__count">12</span>
                 </a>
               </li>
             </ul>
-            <div>
+            <div class="user-menu__button">
               <span class="visually-hidden">Кнопка для поиска гостиниц в Седоне</span>
-              <button type="button">Хочу сюда</button>
+              <a class="user-menu__link" href="#">Хочу сюда</a>
             </div>
           </div>
         </div>
@@ -47,17 +52,20 @@
       <main class="main-catalog">
         <section class="filter">
           <h1 class="filter__title">Гостиницы Седоны</h1>
-          <div class="breadcrumbs">
-            <a href="index.html">
-              <img class="breadcrumbs-img" src="images/icon-breadcrumbs.svg" alt="Иконка домика для перехода на главную страницу" width="12" height="12">
-            </a>
-            <p class="breadcrumbs-arrow">&rsaquo;</p>
-            <p class="breadcrumbs-name">Гостиницы</p>
-          </div>
+          <ol class="breadcrumbs-list">
+            <li class="breadcrumbs-list__item">
+              <a href="index.html">
+                <img class="breadcrumbs-img" src="images/icon-breadcrumbs.svg" alt="Иконка домика для перехода на главную страницу" width="12" height="12">
+              </a>
+            </li>
+            <li class="breadcrumbs-list__item">
+              <p class="breadcrumbs-name">Гостиницы</p>
+            </li>
+          </ol>
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="filter__left">
-              <div class="infrastructure">
-                <p class="infrastructure__title">Инфраструктура:</p>
+              <fieldset class="infrastructure">
+                <legend>Инфраструктура:</legend>
                 <ul class="infrastructure__list">
                   <li class="infrastructure__item">
                     <label>
@@ -78,9 +86,9 @@
                     </label>
                   </li>
                 </ul>
-              </div>
-              <div class="type-housing">
-                <p class="type-housing__title">Тип жилья:</p>
+              </fieldset>
+              <fieldset class="type-housing">
+                <legend >Тип жилья:</legend>
                 <ul class="type-housing__list">
                   <li class="type-housing__item">
                     <label>
@@ -101,11 +109,11 @@
                     </label>
                   </li>
                 </ul>
-              </div>
+              </fieldset>
             </div>
             <div class="filter__right">
-              <div class="cost">
-                <p class="cost__title">Стоимость, Р:</p>
+              <fieldset class="cost">
+                <legend class="cost__title">Стоимость, Р:</legend>
                 <ul class="cost__list">
                   <li class="cost__item cost__item-from">
                     <input class="cost__input" type="text" value="0">
@@ -123,7 +131,7 @@
                   <button class="cost__buttons-apply" type="submit">Применить</button>
                   <button class="cost__buttons-reset" type="reset">Сбросить</button>
                 </div>
-              </div>
+              </fieldset>
             </div>
           </form>
         </section>
@@ -262,7 +270,7 @@
               </ul>
             </div>
             <div class="pagination">
-              <ul class="pagination__list">
+              <ol class="pagination__list">
                 <li class="pagination__item">
                   <a class="pagination__item-link" href="#">1</a>
                 </li>
@@ -281,7 +289,7 @@
                 <li class="pagination__item">
                   <a class="pagination__item-link" href="#">10</a>
                 </li>
-              </ul>
+              </ol>
             </div>
         </section>
 
