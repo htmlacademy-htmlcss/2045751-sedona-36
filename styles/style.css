@@ -291,17 +291,6 @@ body {
   text-align: center;
 }
 
-.reasons__item-content:before {
-  content: "";
-  width: 60px;
-  height: 2px;
-  position: absolute;
-  background-color: #ffffff;
-  left: 50%;
-  top: 49%;
-  transform: translateX(-50%);
-}
-
 .reasons__item-content-photo {
   padding-top: 102px;
   padding-bottom: 102px;
@@ -352,13 +341,6 @@ body {
   position: relative;
 }
 
-.reasons__item-content-nophoto:before {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 51%;
-}
-
 .reasons__item-text-nophoto {
   color: #333333;
 }
@@ -401,10 +383,81 @@ body {
 .recommendations__text {
   width: 490px;
   margin: 0 auto;
+  padding-bottom: 62px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+
+.recommendations__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recommendations__item {
+  width: 400px;
+}
+
+.recommendations__item--lighter {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.recommendations__item-content {
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 81px;
+  margin-bottom: 81px;
+  padding-top: 102px;
+  text-align: center;
+}
+
+.recommendations__item-content-house {
+  background-image: url("../images/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: left 78px top 0;
+}
+
+.recommendations__item-content-food {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: left 78px top 0;
+}
+
+.recommendations__item-content-gift {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: left 78px top 0;
+}
+
+.recommendations__item-title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.recommendations__item-text {
+  margin: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.recommendations__item-text-house {
+  padding-right: 28px;
+  padding-left: 28px;
 }
 /* Конец стилизации RECOMMENDATIONS */
