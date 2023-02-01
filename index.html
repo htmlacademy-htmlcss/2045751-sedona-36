@@ -104,7 +104,7 @@
         <h2 class="recommendations__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="recommendations__text">Опытный персонал и качественное обслуживание!</p>
         <ul class="recommendations__list">
-          <li class="recommendations__item recommendations__item--lighter">
+          <li class="recommendations__item">
             <div class="recommendations__item-content recommendations__item-content-house">
               <h3 class="recommendations__item-title">Жилье</h3>
               <p class="recommendations__item-text recommendations__item-text-house">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -116,7 +116,7 @@
               <p class="recommendations__item-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="recommendations__item recommendations__item--lighter">
+          <li class="recommendations__item">
             <div class="recommendations__item-content recommendations__item-content-gift">
               <h3 class="recommendations__item-title">Сувениры</h3>
               <p class="recommendations__item-text">Не только китайского, но и настоящего местного производства!</p>
@@ -134,8 +134,10 @@
       </section>
 
       <section class="subcribe">
-        <h2 class="subcribe__title">Подпишитесь на рассылку</h2>
-        <p class="subcribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <div class="subcribe__content">
+          <h2 class="subcribe__title">Подпишитесь на рассылку</h2>
+          <p class="subcribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        </div>
         <form class="subcribe__form" action="//echo.htmlacademy.ru" method="POST">
           <input class="subcribe__form-input" type="text">
           <button class="subcribe__form-button" type="submit">Подписаться</button>

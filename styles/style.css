@@ -410,6 +410,7 @@ body {
 
 .recommendations__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -417,11 +418,9 @@ body {
 
 .recommendations__item {
   width: 400px;
-  padding-right: 85px;
-  padding-left: 85px;
 }
 
-.recommendations__item--lighter {
+.recommendations__item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -535,3 +534,42 @@ body {
   color: #ffffff;
 }
 /* Конец стилизации SEARCH */
+
+/* Стилизация SUBCRIBE */
+.subcribe {
+  background-image: url("../images/subscribe-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.subcribe__content {
+  width: 475px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subcribe__title {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subcribe__item-text {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/* Конец стилизации SUBCRIBE */
