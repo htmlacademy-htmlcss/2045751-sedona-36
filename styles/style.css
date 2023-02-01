@@ -536,11 +536,12 @@ body {
 
 /* Стилизация SUBCRIBE */
 .subcribe {
+  background-color: #82B3D3;
   background-image: url("../images/subscribe-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 96px;
-  padding-bottom: 104px;
+  padding-bottom: 105px;
 }
 
 .subcribe__content {
@@ -571,4 +572,54 @@ body {
   color: #ffffff;
 }
 
+.subcribe__form {
+  width: 684px;
+  height: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+
+.subcribe__form-input {
+  height: 100%;
+  flex-grow: 2;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  padding-right: 54px;
+  padding-left: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subcribe__form-input::placeholder {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subcribe__form-button {
+  flex-grow: 1;
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /* Конец стилизации SUBCRIBE */
