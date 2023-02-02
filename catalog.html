@@ -12,7 +12,7 @@
           <nav class="nav">
             <div class="logo">
               <a href="index.html">
-                <img class="logo" src="images/logo.svg" alt="логотип сайта Седона" width="140" height="70">
+                <img class="logo__img" src="images/logo.svg" alt="логотип сайта Седона" width="140" height="70">
               </a>
             </div>
             <ul class="nav__list">
@@ -51,89 +51,91 @@
 
       <main class="main-catalog">
         <section class="filter">
-          <h1 class="filter__title">Гостиницы Седоны</h1>
-          <ol class="breadcrumbs-list">
-            <li class="breadcrumbs-list__item">
-              <a href="index.html">
-                <img class="breadcrumbs-img" src="images/icon-breadcrumbs.svg" alt="Иконка домика для перехода на главную страницу" width="12" height="12">
-              </a>
-            </li>
-            <li class="breadcrumbs-list__item">
-              <p class="breadcrumbs-name">Гостиницы</p>
-            </li>
-          </ol>
-          <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="filter__left">
-              <fieldset class="infrastructure">
-                <legend>Инфраструктура:</legend>
-                <ul class="infrastructure__list">
-                  <li class="infrastructure__item">
-                    <label>
-                      <input class="infrastructure__item-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="infrastructure__item">
-                    <label>
-                      <input class="infrastructure__item-input" type="checkbox" name="parking-space" checked>
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="infrastructure__item">
-                    <label>
-                      <input class="infrastructure__item-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="type-housing">
-                <legend >Тип жилья:</legend>
-                <ul class="type-housing__list">
-                  <li class="type-housing__item">
-                    <label>
-                      <input class="type-housing__input" type="radio" name="type-housing" value="hotel" checked>
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="type-housing__item">
-                    <label>
-                      <input class="type-housing__input" type="radio" name="type-housing" value="motel">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="type-housing__item">
-                    <label>
-                      <input class="type-housing__input" type="radio" name="type-housing" value="apartments">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="filter__right">
-              <fieldset class="cost">
-                <legend class="cost__title">Стоимость, Р:</legend>
-                <ul class="cost__list">
-                  <li class="cost__item cost__item-from">
-                    <input class="cost__input" type="text" value="0">
-                    <span>от</span>
-                  </li>
-                  <li class="cost__item cost__item-to">
-                    <input class="cost__input" type="text" value="9000">
-                    <span>до</span>
-                  </li>
-                </ul>
-                <div class="cost__range">
-                  <input type="range">
-                </div>
-                <div class="cost__buttons">
-                  <button class="cost__buttons-apply" type="submit">Применить</button>
-                  <button class="cost__buttons-reset" type="reset">Сбросить</button>
-                </div>
-              </fieldset>
-            </div>
-          </form>
+          <div class="filter__content">
+            <h1 class="filter__title">Гостиницы Седоны</h1>
+            <ol class="breadcrumbs-list">
+              <li class="breadcrumbs-list__item breadcrumbs-list__item-house">
+                <a class="breadcrumbs-list__item-link" href="index.html">
+                  <span class="visually-hidden">Иконка домика для перехода на главную страницу</span>
+                </a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <p class="breadcrumbs-name">Гостиницы</p>
+              </li>
+            </ol>
+            <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="filter__left">
+                <fieldset class="infrastructure">
+                  <legend>Инфраструктура:</legend>
+                  <ul class="infrastructure__list">
+                    <li class="infrastructure__item">
+                      <label>
+                        <input class="infrastructure__item-input" type="checkbox" name="swimming-pool" checked>
+                        Бассейн
+                      </label>
+                    </li>
+                    <li class="infrastructure__item">
+                      <label>
+                        <input class="infrastructure__item-input" type="checkbox" name="parking-space" checked>
+                        Парковка
+                      </label>
+                    </li>
+                    <li class="infrastructure__item">
+                      <label>
+                        <input class="infrastructure__item-input" type="checkbox" name="wi-fi">
+                        Wi-Fi
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="type-housing">
+                  <legend >Тип жилья:</legend>
+                  <ul class="type-housing__list">
+                    <li class="type-housing__item">
+                      <label>
+                        <input class="type-housing__input" type="radio" name="type-housing" value="hotel" checked>
+                        Гостиница
+                      </label>
+                    </li>
+                    <li class="type-housing__item">
+                      <label>
+                        <input class="type-housing__input" type="radio" name="type-housing" value="motel">
+                        Мотель
+                      </label>
+                    </li>
+                    <li class="type-housing__item">
+                      <label>
+                        <input class="type-housing__input" type="radio" name="type-housing" value="apartments">
+                        Апартаменты
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="filter__right">
+                <fieldset class="cost">
+                  <legend class="cost__title">Стоимость, Р:</legend>
+                  <ul class="cost__list">
+                    <li class="cost__item cost__item-from">
+                      <input class="cost__input" type="text" value="0">
+                      <span>от</span>
+                    </li>
+                    <li class="cost__item cost__item-to">
+                      <input class="cost__input" type="text" value="9000">
+                      <span>до</span>
+                    </li>
+                  </ul>
+                  <div class="cost__range">
+                    <input type="range">
+                  </div>
+                  <div class="cost__buttons">
+                    <button class="cost__buttons-apply" type="submit">Применить</button>
+                    <button class="cost__buttons-reset" type="reset">Сбросить</button>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
         </section>
 
         <section class="hotels">
