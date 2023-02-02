@@ -769,11 +769,88 @@ body {
 
 .breadcrumbs-name {
   margin: 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
+
+.filter__left {
+  border: 1px solid red;
+  width: 371px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.filter__left-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.filter__left-title {
+  padding-bottom: 33px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.filter__left-field {
+  padding: 0;
+  border: none;
+}
+
+.filter__form {
+  display: flex;
+}
+
+.infrastructure__title {
+  margin-left: -4px;
+}
+
+.type-housing__title {
+  margin-left: 0;
+}
+
+.infrastructure__item {
+  padding-bottom: 16px;
+}
+
+.infrastructure__item-label {
+  padding-left: 33px;
+}
+
+.infrastructure__item-input {
+  position: absolute;
+  appearance: none;
+  margin-left: -33px;
+  margin-top: 4px;
+}
+
+.infrastructure__item-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -36px;
+  background-image: url("../images/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
+  background-image: url("../images/checkbox-checked.svg");
+}
+
 /* Конец стилизации FILTER */
