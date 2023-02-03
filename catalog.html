@@ -120,19 +120,21 @@
               </div>
               <div class="filter__right">
                 <fieldset class="cost">
-                  <legend class="cost__title">Стоимость, Р:</legend>
-                  <ul class="cost__list">
-                    <li class="cost__item cost__item-from">
-                      <input class="cost__input" type="text" value="0">
-                      <span>от</span>
-                    </li>
-                    <li class="cost__item cost__item-to">
-                      <input class="cost__input" type="text" value="9000">
-                      <span>до</span>
-                    </li>
-                  </ul>
-                  <div class="cost__range">
-                    <input type="range">
+                  <legend class="cost__title">Стоимость, ₽:</legend>
+                    <div class="cost__content">
+                      <ul class="cost__list">
+                        <li class="cost__item cost__item-from">
+                          <input class="cost__input cost__input-from" type="text" placeholder="0" value="">
+                          <span class="cost__item-span">от</span>
+                        </li>
+                        <li class="cost__item cost__item-to">
+                          <input class="cost__input cost__input-to" type="text" placeholder="9000" value="">
+                          <span class="cost__item-span">до</span>
+                        </li>
+                      </ul>
+                      <div class="cost__range">
+                        <input type="range">
+                      </div>
                   </div>
                   <div class="cost__buttons">
                     <button class="cost__buttons-apply" type="submit">Применить</button>

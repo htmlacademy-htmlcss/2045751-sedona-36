@@ -713,7 +713,7 @@ body {
   background-size: cover;
   padding-top: 35px;
   padding-right: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 57px;
   padding-left: 70px;
 }
 
@@ -777,12 +777,15 @@ body {
   color: #ffffff;
 }
 
+.filter__form {
+  display: flex;
+  margin-top: 40px;
+}
+
 .filter__left {
-  border: 1px solid red;
   width: 371px;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
 }
 
 .filter__left-list {
@@ -813,10 +816,6 @@ body {
   border: none;
 }
 
-.filter__form {
-  display: flex;
-}
-
 .infrastructure__title {
   margin-left: -4px;
 }
@@ -838,8 +837,8 @@ body {
 
 .infrastructure__item-checkbox {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   margin-left: -36px;
   background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
@@ -885,4 +884,112 @@ body {
   background-image: url("../images/radio-checked.svg");
 }
 
+.filter__right {
+  width: 549px;
+  margin-left: 139px;
+}
+
+.cost {
+  display: flex;
+  border: none;
+  padding: 0;
+}
+
+.cost__title {
+  padding-bottom: 32px;
+  padding-left: 0;
+  font-family: 'PT Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.cost__list {
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cost__item {
+  position: relative;
+  width: 143px;
+}
+
+.cost__item-span {
+  width: 20px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cost__input {
+  width: 142px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  box-sizing: border-box;
+  padding-right: 45px;
+  padding-left: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.cost__input::placeholder {
+  color: #000000;
+}
+
+.cost__input-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.cost__input-to {
+  border-radius: 0 4px 4px 0;
+}
+
+.cost__buttons {
+  width: 191px;
+  margin-right: -3px;
+  margin-left: auto;
+}
+
+.cost__buttons-apply {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 33px;
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 4px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cost__buttons-reset {
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /* Конец стилизации FILTER */
