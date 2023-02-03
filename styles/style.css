@@ -821,10 +821,6 @@ body {
   margin-left: -4px;
 }
 
-.type-housing__title {
-  margin-left: 0;
-}
-
 .infrastructure__item {
   padding-bottom: 16px;
 }
@@ -851,6 +847,42 @@ body {
 
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked.svg");
+}
+
+.type-housing {
+  margin-right: 12px;
+}
+
+.type-housing__title {
+  margin-left: -12px;
+}
+
+.type-housing__item {
+  padding-bottom: 16px;
+}
+
+.type-housing__item-label {
+  padding-left: 26px;
+}
+
+.type-housing__input {
+  position: absolute;
+  appearance: none;
+  margin-top: 4px;
+  margin-left: -30px;
+}
+
+.type-housing__item-radio {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  margin-left: -36px;
+  background-image: url("../images/radio.svg");
+  background-repeat: no-repeat;
+}
+
+.type-housing__input:checked ~ .type-housing__item-radio {
+  background-image: url("../images/radio-checked.svg");
 }
 
 /* Конец стилизации FILTER */
