@@ -996,7 +996,6 @@ body {
 
 /* Стилизация HOTELS */
 .hotels {
-  border: 1px solid red;
   padding-top: 50px;
   padding-right: 70px;
   padding-left: 70px;
@@ -1011,7 +1010,6 @@ body {
 .sorting__result {
   width: 470px;
   margin-right: auto;
-  padding-top: 6px;
 }
 
 .sorting__text {
@@ -1037,7 +1035,7 @@ body {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
-  padding-left: 20px;
+  padding-left: 18px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
