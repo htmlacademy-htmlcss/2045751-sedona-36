@@ -976,6 +976,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   word-break: break-all;
+  cursor: pointer;
 }
 
 .cost__buttons-apply {
@@ -1081,6 +1082,11 @@ body {
   background-image: url("../images/icon-list.svg");
 }
 
+.hotels-catalog {
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 39px;
+}
+
 .hotels__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 340px);
@@ -1149,6 +1155,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   word-break: break-all;
+  cursor: pointer;
 }
 
 .more-detailed {
