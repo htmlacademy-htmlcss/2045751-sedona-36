@@ -68,22 +68,22 @@
           </li>
           <li>
             <ul class="reasons__list-nophoto">
-              <li class="reasons__item reasons__item--lighter">
+              <li class="reasons__item reasons__item-nophoto">
                 <div class="reasons__item-content reasons__item-content-nophoto">
                   <h3 class="reasons__item-title reasons__item-title-nophoto">Небольшая площадь</h3>
-                  <p class="reasons__item-text">Все достопримечательности находятся очень близко</p>
+                  <p class="reasons__item-text reasons__item-text-nophoto">Все достопримечательности находятся очень близко</p>
                 </div>
               </li>
-              <li class="reasons__item reasons__item--light">
+              <li class="reasons__item reasons__item-nophoto">
                 <div class="reasons__item-content reasons__item-content-nophoto">
                   <h3 class="reasons__item-title reasons__item-title-nophoto">Красивая дорога</h3>
                   <p class="reasons__item-text reasons__item-text-nophoto">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
               </li>
-              <li class="reasons__item reasons__item--lighter">
+              <li class="reasons__item reasons__item-nophoto">
                 <div class="reasons__item-content reasons__item-content-nophoto">
                   <h3 class="reasons__item-title reasons__item-title-nophoto">Мало туристов</h3>
-                  <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+                  <p class="reasons__item-text reasons__item-text-nophoto">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
               </li>
             </ul>
@@ -104,7 +104,7 @@
         <h2 class="recommendations__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="recommendations__text">Опытный персонал и качественное обслуживание!</p>
         <ul class="recommendations__list">
-          <li class="recommendations__item recommendations__item--lighter">
+          <li class="recommendations__item">
             <div class="recommendations__item-content recommendations__item-content-house">
               <h3 class="recommendations__item-title">Жилье</h3>
               <p class="recommendations__item-text recommendations__item-text-house">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -116,7 +116,7 @@
               <p class="recommendations__item-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="recommendations__item recommendations__item--lighter">
+          <li class="recommendations__item">
             <div class="recommendations__item-content recommendations__item-content-gift">
               <h3 class="recommendations__item-title">Сувениры</h3>
               <p class="recommendations__item-text">Не только китайского, но и настоящего местного производства!</p>
@@ -133,41 +133,45 @@
         <a class="search__link" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="subcribe">
-        <h2 class="subcribe__title">Подпишитесь на рассылку</h2>
-        <p class="subcribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subcribe__form" action="//echo.htmlacademy.ru" method="POST">
-          <input class="subcribe__form-input" type="text">
-          <button class="subcribe__form-button" type="submit">Подписаться</button>
+      <section class="subscribe">
+        <div class="subscribe__content">
+          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+          <p class="subscribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        </div>
+        <form class="subscribe__form" action="//echo.htmlacademy.ru" method="POST">
+          <input class="subscribe__form-input" type="email" placeholder="Ваш e-mail">
+          <button class="subscribe__form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
     <footer class="main-footer">
-      <ul class="socials-list">
-        <li class="socials-list__item">
-          <a href="https://vk.com/htmlacademy">
-            <img src="images/icon-vk.svg" alt="Ссылка на соцсеть вконтакте" width="24" height="14">
+      <div class="main-footer__content">
+        <ul class="socials-list">
+          <li class="socials-list__item socials-list__item-vk">
+            <a class="socials-list__item-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ссылка на соцсеть вконтакте</span>
+            </a>
+          </li>
+          <li class="socials-list__item socials-list__item-telegram">
+            <a class="socials-list__item-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ссылка на соцсеть телеграм</span>
+            </a>
+          </li>
+          <li class="socials-list__item socials-list__item-youtube">
+            <a class="socials-list__item-link" href=" https://www.youtube.com/user/htmlacademyru">
+             <span class="visually-hidden">Ссылка на youtube</span>
+            </a>
+          </li>
+        </ul>
+        <address class="main-footer__address">
+          <a class="main-footer__address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <div class="logo-htmlacademy">
+          <a class="logo-htmlacademy__link" href="https://htmlacademy.ru" target="_blank">
+            <img src="images/logo-htmlacademy.svg" alt="Логотип htmlacademy" width="115" height="33">
           </a>
-        </li>
-        <li class="socials-list__item">
-          <a href="https://t.me/htmlacademy">
-            <img src="images/icon-telegram.svg" alt="Ссылка на соцсеть телеграм" width="18" height="15">
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a href=" https://www.youtube.com/user/htmlacademyru">
-            <img src="images/icon-youtube.svg" alt="Ссылка на youtube" width="22" height="17">
-          </a>
-        </li>
-      </ul>
-      <address class="main-footer__address">
-        <a class="main-footer__address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      <div class="logo-htmlacademy">
-        <a href="https://htmlacademy.ru" target="_blank">
-          <img src="images/logo-htmlacademy.svg" alt="Логотип htmlacademy" width="115" height="33">
-        </a>
+        </div>
       </div>
     </footer>
   </body>
