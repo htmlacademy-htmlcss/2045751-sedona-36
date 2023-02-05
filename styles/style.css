@@ -963,11 +963,9 @@ body {
   margin-left: auto;
 }
 
-.cost__buttons-apply {
+.cost__button {
   width: 100%;
   min-height: 36px;
-  margin-bottom: 33px;
-  background-color: #82B3D3;
   border: none;
   border-radius: 4px;
   font-family: 'PT Sans', sans-serif;
@@ -977,21 +975,16 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+  word-break: break-all;
+}
+
+.cost__buttons-apply {
+  margin-bottom: 33px;
+  background-color: #82B3D3;
 }
 
 .cost__buttons-reset {
-  width: 100%;
-  min-height: 36px;
   background-color: transparent;
-  border: none;
-  border-radius: 4px;
-  font-family: 'PT Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 /* Конец стилизации FILTER */
 
@@ -1092,7 +1085,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, 340px);
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 19px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1138,8 +1131,9 @@ body {
 }
 
 .hotels__item-buttons {
-  width: 100%;
+  width: 300px;
   display: flex;
+  justify-content: space-between;
 }
 
 .hotels__item-button {
@@ -1154,10 +1148,10 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+  word-break: break-all;
 }
 
 .more-detailed {
-  margin-right: auto;
   background-color: #756157;
 }
 
@@ -1167,5 +1161,51 @@ body {
 
 .hotels__item-button--added {
   background-color:  #7DB54F;
+}
+
+.rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.rating__stars {
+  width: 140px;
+  min-height: 37px;
+  background-repeat: no-repeat;
+  background-position: center top 50%;
+}
+
+.rating__stars-amara {
+  background-image: url("../images/stars-4.svg");
+}
+
+.rating__stars-diablo {
+  background-image: url("../images/stars-4.svg");
+}
+
+.rating__stars-desert {
+  background-image: url("../images/stars-3.svg");
+}
+
+.rating__stars-green {
+  background-image: url("../images/stars-2.svg");
+}
+
+.rating__result {
+  width: 140px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 /* Конец стилизации HOTELS */
