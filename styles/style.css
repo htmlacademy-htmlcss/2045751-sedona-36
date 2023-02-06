@@ -544,6 +544,11 @@ body {
   padding-bottom: 105px;
 }
 
+.subscribe--nophoto {
+  background-color: transparent;
+  background-image: none;
+}
+
 .subscribe__content {
   width: 475px;
   margin: 0 auto;
@@ -562,6 +567,10 @@ body {
   color: #ffffff;
 }
 
+.subscribe__title--nophoto {
+  color: #000000;
+}
+
 .subscribe__item-text {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
@@ -570,6 +579,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+}
+
+.subscribe__item-text--nophoto {
+  color: #333333;
 }
 
 .subscribe__form {
@@ -605,6 +618,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  opacity: 0.6;
 }
 
 .subscribe__form-button {
@@ -993,6 +1007,7 @@ body {
 .hotels {
   padding-top: 50px;
   padding-right: 70px;
+  padding-bottom: 60px;
   padding-left: 70px;
 }
 
@@ -1216,3 +1231,51 @@ body {
   text-transform: uppercase;
 }
 /* Конец стилизации HOTELS */
+
+/* Стилизация PAGINATION */
+.pagination {
+  width: 400px;
+  margin-top: 39px;
+}
+
+.pagination__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  column-gap: 8px;
+  row-gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item-link {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pagination__item:nth-child(5) .pagination__item-link {
+  background-color: transparent;
+}
+
+.pagination__item-link--active {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination__item:nth-child(5) .pagination__item-link {
+  background-color: transparent;
+  color: #000000;
+}
+/* Конец стилизации PAGINATION */
