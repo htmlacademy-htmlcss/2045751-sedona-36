@@ -15,11 +15,15 @@
 }
 
 html {
+  height: 100%;
   background-color: #F2F2F2;
 }
 
 body {
   max-width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -42,6 +46,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Стилизация ХЕДЕРА */
@@ -910,6 +918,10 @@ body {
   padding: 0;
 }
 
+.cost__content {
+  width: 287px;
+}
+
 .cost__title {
   padding-bottom: 32px;
   padding-left: 0;
@@ -926,6 +938,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
@@ -969,6 +982,41 @@ body {
 
 .cost__input-to {
   border-radius: 0 4px 4px 0;
+}
+
+.cost__range-scale {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #6E7576;
+}
+
+.cost__range-bar {
+  position: absolute;
+  width: 226px;
+  height: 100%;
+  background-color: #ffffff;
+  left: 0;
+}
+
+.cost__range-button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.cost__range-button-min {
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+
+.cost__range-button-max {
+  position: absolute;
+  right: 0;
+  top: -8px;
 }
 
 .cost__buttons {
