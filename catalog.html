@@ -49,7 +49,7 @@
         </div>
       </header>
 
-      <main class="main-catalog">
+      <main class="main-container main-catalog">
         <section class="filter">
           <div class="filter__content">
             <h1 class="filter__title">Гостиницы Седоны</h1>
@@ -124,16 +124,20 @@
                     <div class="cost__content">
                       <ul class="cost__list">
                         <li class="cost__item cost__item-from">
-                          <input class="cost__input cost__input-from" type="text" placeholder="0" value="">
+                          <input class="cost__input cost__input-from" type="text" name="min-cost" placeholder="0">
                           <span class="cost__item-span">от</span>
                         </li>
                         <li class="cost__item cost__item-to">
-                          <input class="cost__input cost__input-to" type="text" placeholder="9000" value="">
+                          <input class="cost__input cost__input-to" type="text" name="max-cost" placeholder="9000">
                           <span class="cost__item-span">до</span>
                         </li>
                       </ul>
                       <div class="cost__range">
-                        <input type="range">
+                        <div class="cost__range-scale">
+                          <div class="cost__range-bar">
+
+                          </div>
+                        </div>
                       </div>
                   </div>
                   <div class="cost__buttons">
