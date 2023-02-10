@@ -551,14 +551,9 @@ body {
   background-image: none;
 }
 
-.subscribe__content {
-  width: 475px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .subscribe__title {
-  margin: 0;
+  width: 404px;
+  margin: 0 auto;
   padding-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -574,12 +569,14 @@ body {
 }
 
 .subscribe__item-text {
-  margin: 0;
+  width: 545px;
+  margin: 0 auto;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
   color: #ffffff;
 }
 
