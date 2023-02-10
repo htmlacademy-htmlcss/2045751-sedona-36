@@ -491,14 +491,9 @@ body {
   padding-bottom: 96px;
 }
 
-.search__content {
-  width: 592px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .search__title {
-  margin: 0;
+  width: 297px;
+  margin: 0 auto;
   padding-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -509,13 +504,15 @@ body {
 }
 
 .search__item-text {
-  margin: 0;
+  width: 592px;
+  margin: 0 auto;
   padding-bottom: 55px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
   color: #333333;
 }
 
