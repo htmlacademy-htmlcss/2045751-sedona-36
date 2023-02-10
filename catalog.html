@@ -49,7 +49,7 @@
         </div>
       </header>
 
-      <main class="main-catalog">
+      <main class="main-container main-catalog">
         <section class="filter">
           <div class="filter__content">
             <h1 class="filter__title">Гостиницы Седоны</h1>
@@ -124,16 +124,25 @@
                     <div class="cost__content">
                       <ul class="cost__list">
                         <li class="cost__item cost__item-from">
-                          <input class="cost__input cost__input-from" type="text" placeholder="0" value="">
+                          <input class="cost__input cost__input-from" type="text" name="min-cost" placeholder="0">
                           <span class="cost__item-span">от</span>
                         </li>
                         <li class="cost__item cost__item-to">
-                          <input class="cost__input cost__input-to" type="text" placeholder="9000" value="">
+                          <input class="cost__input cost__input-to" type="text" name="max-cost" placeholder="9000">
                           <span class="cost__item-span">до</span>
                         </li>
                       </ul>
                       <div class="cost__range">
-                        <input type="range">
+                        <div class="cost__range-scale">
+                          <div class="cost__range-bar">
+                            <button class="cost__range-button cost__range-button-min" type="button">
+                              <span class="visually-hidden">Бегунок слева для изменения минимальной стоимости гостиницы</span>
+                            </button>
+                            <button class="cost__range-button cost__range-button-max" type="button">
+                              <span class="visually-hidden">Бегунок справа для изменения максимальной стоимости гостиницы</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                   </div>
                   <div class="cost__buttons">
@@ -279,7 +288,7 @@
             <div class="pagination">
               <ol class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__item-link" href="#">1</a>
+                  <a class="pagination__item-link pagination__item-link--active" href="#">1</a>
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__item-link" href="#">2</a>
@@ -300,12 +309,14 @@
             </div>
         </section>
 
-        <section class="subcribe">
-          <h2 class="subcribe__title">Подпишитесь на рассылку</h2>
-          <p class="subcribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subcribe__form" action="#" method="POST">
-            <input class="subcribe__form-input" type="text">
-            <button class="subcribe__form-button" type="submit">Подписаться</button>
+        <section class="subscribe subscribe--nophoto">
+          <div class="subscribe__content">
+            <h2 class="subscribe__title subscribe__title--nophoto">Подпишитесь на рассылку</h2>
+            <p class="subscribe__item-text subscribe__item-text--nophoto">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
+          <form class="subscribe__form" action="//echo.htmlacademy.ru" method="POST">
+            <input class="subscribe__form-input" type="email" placeholder="Ваш e-mail">
+            <button class="subscribe__form-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
