@@ -730,6 +730,7 @@ body {
 
 .address {
   width: 720px;
+  border: none;
   padding-top: 5px;
   padding-left: 40px;
   text-align: center;
@@ -744,6 +745,19 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.address__phone:hover {
+  color: #756157;
+}
+
+.address__phone:focus {
+  outline: none;
+  color: #756157;
+}
+
+.address__phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .logo-htmlacademy {
