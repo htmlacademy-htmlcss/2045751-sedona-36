@@ -204,6 +204,16 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.user-menu__link:hover {
+  background-color: #615048;
+}
+
+.user-menu__link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* Конец стилизации ХЕДЕРА */
 
 /* Стилизация PROMO */
@@ -534,6 +544,15 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.search__link:hover {
+  background-color: #615048;
+}
+
+.search__link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 /* Конец стилизации SEARCH */
 
 /* Стилизация SUBSCRIBE */
@@ -610,14 +629,21 @@ body {
   color: #000000;
 }
 
+.subscribe__form-input:hover {
+  background-color: #E6E6E6;
+}
+
+.subscribe__form-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .subscribe__form-input::placeholder {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
-  opacity: 0.6;
+  color: rgb(0, 0, 0, 0.6);
 }
 
 .subscribe__form-button {
@@ -635,6 +661,15 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+}
+
+.subscribe__form-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe__form-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 /* Конец стилизации SUBSCRIBE */
 
