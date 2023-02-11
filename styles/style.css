@@ -728,14 +728,14 @@ body {
   background-position: 50% 50%;
 }
 
-.main-footer__address {
+.address {
   width: 720px;
   padding-top: 5px;
   padding-left: 40px;
   text-align: center;
 }
 
-.main-footer__address-phone {
+.address__phone {
   display: block;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
