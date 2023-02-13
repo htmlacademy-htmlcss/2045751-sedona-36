@@ -296,7 +296,7 @@ body {
   background-color: #82B3D3;
 }
 
-.reasons__item:nth-child(2n+2) {
+.reasons__item:nth-child(2n+2):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -327,9 +327,11 @@ body {
   padding-bottom: 112px;
   padding-left: 85px;
   text-align: center;
+  word-break: break-word;
 }
 
 .reason__title {
+  position: relative;
   width: 171px;
   margin: 0 auto;
   margin-bottom: 61px;
@@ -341,9 +343,25 @@ body {
   text-transform: uppercase;
 }
 
+.reason__title:before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+}
+
 .reasons__item:first-child .reason__title,
-.reasons__item:last-child .reason__title{
+.reasons__item:last-child .reason__title {
   color: #ffffff;
+}
+
+.reasons__item:first-child .reason__title::before,
+.reasons__item:last-child .reason__title::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .reason__title-text {
