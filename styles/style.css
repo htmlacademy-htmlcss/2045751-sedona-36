@@ -341,14 +341,20 @@ body {
   text-transform: uppercase;
 }
 
-.reason__title-text {
-  margin: 0;
+.reasons__item:first-child .reason__title,
+.reasons__item:last-child .reason__title{
+  color: #ffffff;
 }
 
+.reason__title-text {
+  margin: 0;
+  color: #333333;
+}
 
-
-
-
+.reasons__item:first-child .reason__title-text,
+.reasons__item:last-child .reason__title-text {
+  color: #ffffff;
+}
 /* Конец стилизации REASONS */
 
 /* Стилизация RECOMMENDATIONS */
@@ -372,7 +378,7 @@ body {
 .recommendations__text {
   width: 490px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  margin-bottom: 64px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -404,34 +410,34 @@ body {
   background-image: url("../images/icon-house.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: center top 83px;
+  background-position: center top 80px;
 }
 
 .recommendations__item-food {
   background-image: url("../images/icon-food.svg");
   background-repeat: no-repeat;
   background-size: 74px 70px;
-  background-position: center top 83px;
+  background-position: center top 82px;
 }
 
 .recommendations__item-gift {
   background-image: url("../images/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 64px 76px;
-  background-position: center top 83px;
+  background-position: center top 80px;
 }
 
 .recommendation {
   width: 230px;
   margin: 0 auto;
-  margin-top: 30%;
+  margin-top: 109px;
   text-align: center;
   word-break: break-word;
 }
 
 .recommendation__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -454,7 +460,7 @@ body {
 /* Стилизация SEARCH */
 .search {
   padding-top: 94px;
-  padding-bottom: 96px;
+  padding-bottom: 97px;
 }
 
 .search__title {
@@ -518,7 +524,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 96px;
-  padding-bottom: 105px;
+  padding-bottom: 103px;
 }
 
 .subscribe--nophoto {
@@ -546,6 +552,7 @@ body {
 .subscribe__item-text {
   width: 545px;
   margin: 0 auto;
+  margin-bottom: 56px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -565,7 +572,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 54px;
 }
 
 .subscribe__form-input {
