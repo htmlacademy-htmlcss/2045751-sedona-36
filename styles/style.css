@@ -700,6 +700,10 @@ body {
   background-image: url("../images/icon-vk-hover.svg");
 }
 
+.socials-list__item-vk:active {
+  background-image: url("../images/icon-vk-active.svg");
+}
+
 .socials-list__item-telegram {
   background-image: url("../images/icon-telegram.svg");
   background-repeat: no-repeat;
@@ -711,6 +715,10 @@ body {
   background-image: url("../images/icon-telegram-hover.svg");
 }
 
+.socials-list__item-telegram:active {
+  background-image: url("../images/icon-telegram-active.svg");
+}
+
 .socials-list__item-youtube {
   background-image: url("../images/icon-youtube.svg");
   background-repeat: no-repeat;
@@ -720,6 +728,10 @@ body {
 
 .socials-list__item-youtube:hover {
   background-image: url("../images/icon-youtube-hover.svg");
+}
+
+.socials-list__item-youtube:active {
+  background-image: url("../images/icon-youtube-active.svg");
 }
 
 .address {
@@ -746,7 +758,6 @@ body {
 }
 
 .address__phone:focus {
-  outline: none;
   color: #756157;
 }
 
@@ -759,6 +770,19 @@ body {
   display: block;
   margin-left: auto;
   padding-top: 9px;
+}
+
+.logo-htmlacademy__img {
+  fill: #000000;
+}
+
+.logo-htmlacademy__img:hover {
+  fill: #756157;
+}
+
+.logo-htmlacademy__img:active {
+  fill: rgba(117, 97, 87, 0.3);
+
 }
 /* Конец стилизации FOOTER */
 
