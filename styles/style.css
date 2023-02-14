@@ -85,20 +85,22 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  margin-top: -4px;
-  margin-left: 45px;
+  margin-top: -3px;
+  margin-left: 41px;
   padding: 0;
   padding-top: 4px;
   list-style: none;
 }
 
 .nav__item {
-  padding-bottom: 20px;
   padding-top: 20px;
+  padding-right: 3px;
+  padding-bottom: 20px;
+  padding-left: 3px;
 }
 
 .nav__item:not(:nth-child(3n+3)) {
-  padding-right: 32px;
+  padding-right: 30px;
 }
 
 .nav__item-link {
@@ -478,7 +480,7 @@ body {
 /* Стилизация SEARCH */
 .search {
   padding-top: 94px;
-  padding-bottom: 97px;
+  padding-bottom: 96px;
 }
 
 .search__title {
@@ -542,7 +544,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 96px;
-  padding-bottom: 103px;
+  padding-bottom: 104px;
 }
 
 .subscribe--nophoto {
@@ -570,7 +572,7 @@ body {
 .subscribe__item-text {
   width: 545px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 54px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -670,8 +672,8 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0;
-  margin-top: 4px;
+  margin-top: 5px;
+  margin-left: 0;
   padding: 0;
   list-style: none;
 }
@@ -694,6 +696,21 @@ body {
   background-position: 50% 50%;
 }
 
+.socials-list__item-vk:hover {
+  background-image: url("../images/icon-vk-hover.svg");
+}
+
+.socials-list__item-telegram {
+  background-image: url("../images/icon-telegram.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 16px;
+  background-position: 50% 50%;
+}
+
+.socials-list__item-telegram:hover {
+  background-image: url("../images/icon-telegram-hover.svg");
+}
+
 .socials-list__item-youtube {
   background-image: url("../images/icon-youtube.svg");
   background-repeat: no-repeat;
@@ -701,11 +718,8 @@ body {
   background-position: 50% 50%;
 }
 
-.socials-list__item-telegram {
-  background-image: url("../images/icon-telegram.svg");
-  background-repeat: no-repeat;
-  background-size: 18px 15px;
-  background-position: 50% 50%;
+.socials-list__item-youtube:hover {
+  background-image: url("../images/icon-youtube-hover.svg");
 }
 
 .address {
@@ -744,7 +758,7 @@ body {
   width: 115px;
   display: block;
   margin-left: auto;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 /* Конец стилизации FOOTER */
 
