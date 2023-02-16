@@ -618,6 +618,15 @@ body {
   outline: 3px solid #83B3D3;
 }
 
+@supports selector(:focus-visible) {
+  .subscribe__form-input:focus {
+    outline: none;
+  }
+  .subscribe__form-input:focus-visible {
+    outline: 3px solid #83B3D3;
+  }
+}
+
 .subscribe__form-input:placeholder-shown {
   background-color: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
