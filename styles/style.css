@@ -949,11 +949,21 @@ body {
   margin-left: -36px;
   background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.infrastructure__item-checkbox:hover {
+  background-image: url("../images/checkbox-hover.svg");
 }
 
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked.svg");
 }
+
+.infrastructure__item-input:checked ~ .infrastructure__item-checkbox:hover {
+  background-image: url("../images/checkbox-checked-hover.svg");
+}
+
 
 .type-housing {
   margin-right: 11px;
@@ -1174,6 +1184,7 @@ body {
   align-self: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  outline: none;
   appearance: none;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
@@ -1185,6 +1196,15 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  cursor: pointer;
+}
+
+.choice__select:focus {
+  border: 2px solid #68A2CA;
+}
+
+.choice__select:hover {
+  border: 2px solid #68A2CA;
 }
 
 .view {
@@ -1213,7 +1233,20 @@ body {
   background-position: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  outline: none;
   cursor: pointer;
+}
+
+.view__item-icon:hover {
+  border: 2px solid #000000;
+}
+
+.view__item-icon:focus {
+  border: 2px solid #68A2CA;
+}
+
+.view__item-icon:active {
+  border: 2px solid #000000;
 }
 
 .view__icon-small {
