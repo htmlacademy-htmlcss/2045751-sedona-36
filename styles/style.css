@@ -597,7 +597,6 @@ body {
 .subscribe__form-input {
   height: 100%;
   flex-grow: 2;
-  background-color: #F2F2F2;
   border: none;
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
@@ -619,13 +618,19 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.subscribe__form-input::placeholder {
+.subscribe__form-input:placeholder-shown {
+  background-color: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: rgb(0, 0, 0, 0.6);
+}
+
+.subscribe__form-input:not(:placeholder-shown) {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
 }
 
 .subscribe__form-button {
