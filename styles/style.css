@@ -933,6 +933,15 @@ body {
 
 .infrastructure__item-label {
   padding-left: 33px;
+  cursor: pointer;
+}
+
+.infrastructure__item-label:hover .infrastructure__item-checkbox {
+  background-image: url("../images/checkbox-hover.svg");
+}
+
+.infrastructure__item-label:hover {
+  color: #7EA7C7;
 }
 
 .infrastructure__item-input {
@@ -952,18 +961,14 @@ body {
   cursor: pointer;
 }
 
-.infrastructure__item-checkbox:hover {
-  background-image: url("../images/checkbox-hover.svg");
-}
-
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked.svg");
 }
 
-.infrastructure__item-input:checked ~ .infrastructure__item-checkbox:hover {
+.infrastructure__item-label:hover
+.infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked-hover.svg");
 }
-
 
 .type-housing {
   margin-right: 11px;
