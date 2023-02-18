@@ -1412,12 +1412,39 @@ body {
   background-color: #756157;
 }
 
+.more-detailed:hover {
+  background-color: #615048;
+}
+
+.more-detailed:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .to-favorites {
   background-color: #82B3D3;
 }
 
+.to-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.to-favorites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotels__item-button--added {
   background-color:  #7DB54F;
+}
+
+.hotels__item-button--added:hover {
+  background-color: #6C9E42;
+}
+
+.hotels__item-button--added:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
