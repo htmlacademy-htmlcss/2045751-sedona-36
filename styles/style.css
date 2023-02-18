@@ -940,8 +940,16 @@ body {
   background-image: url("../images/checkbox-hover.svg");
 }
 
+.infrastructure__item-label:active .infrastructure__item-checkbox {
+  background-image: url("../images/checkbox-active.svg");
+}
+
 .infrastructure__item-label:hover {
   color: #7EA7C7;
+}
+
+.infrastructure__item-label:active {
+  color: #9BB9D2;
 }
 
 .infrastructure__item-input {
@@ -981,6 +989,13 @@ body {
 .infrastructure__item-label:hover
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked-hover.svg");
+  background-size: 20px 20px;
+  background-position: 3px 0;
+}
+
+.infrastructure__item-label:active
+.infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
+  background-image: url("../images/checkbox-checked-active.svg");
   background-size: 20px 20px;
   background-position: 3px 0;
 }
