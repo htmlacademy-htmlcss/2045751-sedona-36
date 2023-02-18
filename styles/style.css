@@ -974,6 +974,7 @@ body {
 
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked.svg");
+  background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: 3px 0;
   margin-left: -39px;
@@ -982,6 +983,15 @@ body {
 .infrastructure__item-input:checked:focus ~ .infrastructure__item-checkbox {
   margin-left: -39px;
   background-image: url("../images/checkbox-checked-focus.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: 0 0;
+}
+
+.infrastructure__item-input:focus ~ .infrastructure__item-checkbox {
+  margin-left: -39px;
+  background-image: url("../images/checkbox-focus.svg");
+  background-repeat: no-repeat;
   background-size: 25px 25px;
   background-position: 0 0;
 }
@@ -989,6 +999,7 @@ body {
 .infrastructure__item-label:hover
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-checked-hover.svg");
+  background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: 3px 0;
 }
