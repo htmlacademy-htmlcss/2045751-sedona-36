@@ -1145,6 +1145,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .cost__range-button-min {
