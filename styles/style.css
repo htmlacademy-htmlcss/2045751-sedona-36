@@ -1175,8 +1175,31 @@ body {
   background-color: #82B3D3;
 }
 
+.cost__buttons-apply:hover {
+  background-color: #68A2CA;
+}
+
+.cost__buttons-apply:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .cost__buttons-reset {
   background-color: transparent;
+}
+
+.cost__buttons-reset:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+}
+
+.cost__buttons-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cost__buttons-reset:active {
+  border: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 /* Конец стилизации FILTER */
 
