@@ -957,7 +957,7 @@ body {
   appearance: none;
   width: 30px;
   height: 30px;
-  margin-left: -44px;
+  margin-left: -43px;
   margin-top: -4px;
   outline: none;
 }
@@ -966,14 +966,14 @@ body {
   position: absolute;
   width: 21px;
   height: 21px;
-  margin-left: -39px;
+  margin-left: -36px;
   background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
-  margin-left: -39px;
+  margin-left: -36px;
   background-image: url("../images/checkbox-checked.svg");
   background-repeat: no-repeat;
 }
@@ -982,7 +982,7 @@ body {
   width: 27px;
   height: 27px;
   margin-top: -3px;
-  margin-left: -42px;
+  margin-left: -39px;
   background-image: url("../images/checkbox-checked-focus.svg");
   background-repeat: no-repeat;
 }
@@ -991,7 +991,7 @@ body {
   width: 27px;
   height: 27px;
   margin-top: -3px;
-  margin-left: -42px;
+  margin-left: -39px;
   background-image: url("../images/checkbox-focus.svg");
   background-repeat: no-repeat;
 }
@@ -999,14 +999,14 @@ body {
 .infrastructure__item-label:hover
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
   margin-top: 0;
-  margin-left: -39px;
+  margin-left: -36px;
   background-image: url("../images/checkbox-checked-hover.svg");
   background-repeat: no-repeat;
 }
 
 .infrastructure__item-label:active
 .infrastructure__item-input:checked ~ .infrastructure__item-checkbox {
-  margin-left: -39px;
+  margin-left: -36px;
   background-image: url("../images/checkbox-checked-active.svg");
   background-repeat: no-repeat;
 }
@@ -1047,8 +1047,8 @@ body {
 .type-housing__input {
   position: absolute;
   appearance: none;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   margin-top: 4px;
   margin-left: -30px;
   outline: none;
@@ -1056,12 +1056,27 @@ body {
 
 .type-housing__item-radio {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 21px;
+  height: 21px;
   margin-left: -36px;
   background-image: url("../images/radio.svg");
   background-repeat: no-repeat;
 }
+
+.type-housing__input:checked ~ .type-housing__item-radio {
+  margin-left: -36px;
+  background-image: url("../images/radio-checked.svg");
+  background-repeat: no-repeat;
+}
+
+/* .type-housing__input:checked:focus ~ .type-housing__item-radio {
+  width: 27px;
+  height: 27px;
+  margin-top: -3px;
+  margin-left: -42px;
+  background-image: url("../images/radio-checked-focus.svg");
+  background-repeat: no-repeat;
+} */
 
 .filter__right {
   width: 549px;
