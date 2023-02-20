@@ -617,15 +617,6 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-@supports selector(:focus-visible) {
-  .subscribe__form-input:focus {
-    outline: none;
-  }
-  .subscribe__form-input:focus-visible {
-    outline: 3px solid #83B3D3;
-  }
-}
-
 .subscribe__form-input:placeholder-shown {
   background-color: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
@@ -927,13 +918,19 @@ body {
   margin-left: -4px;
 }
 
+.infrastructure__list {
+  width: 131px;
+}
+
 .infrastructure__item {
   padding-bottom: 16px;
 }
 
 .infrastructure__item-label {
+  display: flex;
   padding-left: 33px;
   cursor: pointer;
+  word-break: break-word;
 }
 
 .infrastructure__item-label:hover .infrastructure__item-checkbox {
@@ -1016,7 +1013,11 @@ body {
 }
 
 .type-housing__title {
-  margin-left: -12px;
+  margin-left: -11px;
+}
+
+.type-housing__list {
+  width: 131px;
 }
 
 .type-housing__item {
@@ -1024,8 +1025,10 @@ body {
 }
 
 .type-housing__item-label {
+  display: flex;
   padding-left: 26px;
   cursor: pointer;
+  word-break: break-word;
 }
 
 .type-housing__item-label:hover {
@@ -1141,6 +1144,14 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.cost__input:hover {
+  background-color: #E6E6E6;
+}
+
+.cost__input:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .cost__input::placeholder {
