@@ -957,7 +957,7 @@ body {
   appearance: none;
   width: 30px;
   height: 30px;
-  margin-left: -43px;
+  margin-left: -41px;
   margin-top: -4px;
   outline: none;
 }
@@ -1049,8 +1049,8 @@ body {
   appearance: none;
   width: 30px;
   height: 30px;
-  margin-top: 4px;
-  margin-left: -30px;
+  margin-top: -4px;
+  margin-left: -41px;
   outline: none;
 }
 
@@ -1069,14 +1069,14 @@ body {
   background-repeat: no-repeat;
 }
 
-/* .type-housing__input:checked:focus ~ .type-housing__item-radio {
+.type-housing__input:checked:focus ~ .type-housing__item-radio {
   width: 27px;
   height: 27px;
   margin-top: -3px;
-  margin-left: -42px;
+  margin-left: -39px;
   background-image: url("../images/radio-checked-focus.svg");
   background-repeat: no-repeat;
-} */
+}
 
 .filter__right {
   width: 549px;
