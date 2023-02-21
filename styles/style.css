@@ -891,6 +891,8 @@ body {
 
 .filter__left-list {
   margin: 0;
+  margin-right: -1px;
+  margin-left: 1px;
   padding: 0;
   list-style: none;
   font-family: 'PT Sans';
@@ -938,10 +940,6 @@ body {
 
 .infrastructure__item-label:hover .infrastructure__item-checkbox {
   background-image: url("../images/checkbox-hover.svg");
-}
-
-.infrastructure__item-label:active .infrastructure__item-checkbox {
-  background-image: url("../images/checkbox-active.svg");
 }
 
 .infrastructure__item-label:hover {
@@ -1011,6 +1009,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.infrastructure__item-label:active
+.infrastructure__item-input ~ .infrastructure__item-checkbox {
+  width: 39px;
+  height: 39px;
+  margin-top: -9px;
+  margin-left: -53px;
+  background-image: url("../images/checkbox-active.svg");
+  background-repeat: no-repeat;
+}
+
 .type-housing {
   margin-right: 11px;
 }
@@ -1046,10 +1054,6 @@ body {
   background-image: url("../images/radio-hover.svg");
 }
 
-.type-housing__item-label:active .type-housing__item-radio {
-  background-image: url("../images/radio-active.svg");
-}
-
 .type-housing__input {
   position: absolute;
   appearance: none;
@@ -1082,6 +1086,14 @@ body {
   margin-left: -39px;
   background-image: url("../images/radio-checked-focus.svg");
   background-repeat: no-repeat;
+}
+
+.type-housing__item-label:active .type-housing__item-radio {
+  width: 39px;
+  height: 39px;
+  margin-top: -3px;
+  margin-left: -39px;
+  background-image: url("../images/radio-active.svg");
 }
 
 .filter__right {
