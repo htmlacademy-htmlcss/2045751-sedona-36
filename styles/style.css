@@ -1645,6 +1645,33 @@ body {
   text-align: left;
 }
 
+.modal__close {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 100%;
+  background-color: #F2F2F2;
+  background-image: url("../images/icon-modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  background-color: #E6E6E6;
+}
+
+.modal__close:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal__close:active {
+  background-color: #E6E6E6;
+  background-image: url("../images/icon-modal-close-active.svg");
+  outline: none;
+}
+
 .dates {
   border: 1px solid green;
   margin: 0;
