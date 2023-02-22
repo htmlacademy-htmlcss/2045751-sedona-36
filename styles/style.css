@@ -1620,6 +1620,7 @@ body {
 }
 
 .modal {
+  border: 1px solid red;
   position: relative;
   width: 717px;
   margin: auto;
