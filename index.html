@@ -194,19 +194,25 @@
 
     <div class="modal-container">
       <form class="modal" action="#" method="post">
-        <h2 class="modal__tittle">Поиск гостиниц в Седоне</h2>
-        <button class="modal__close" type="button">
-          <span class="Кнопка закрытия модального окна"></span>
-        </button>
+        <div class="modal__header">
+          <h2 class="modal__tittle">Поиск гостиницы в Седоне</h2>
+          <button class="modal__close" type="button">
+            <span class="Кнопка закрытия модального окна"></span>
+          </button>
+        </div>
         <ul class="dates">
           <li class="dates__item">
-            <label for="arrival-date">Дата заезда</label>
-            <input class="arrival-date" id="arrival-date" type="text" name="arrival-date" placeholder="27 апреля 2020">
+            <div class="dates__item-content">
+              <label class="dates__item-label" for="arrival-date">Дата заезда:</label>
+              <input class="dates__item-input arrival-date" id="arrival-date" type="text" name="arrival-date" placeholder="27 апреля 2020">
+            </div>
             <span class="dates__message dates__message--mistake">Мы не можем отправить вас в прошлое.</span>
           </li>
           <li class="dates__item">
-            <label for="departure-date">Дата заезда</label>
-            <input class="departure-date" id="departure-date" type="text" name="departure-date" placeholder="1 сентября 2023">
+            <div class="dates__item-content">
+              <label class="dates__item-label" for="departure-date">Дата выезда:</label>
+              <input class="dates__item-input departure-date" id="departure-date" type="text" name="departure-date" placeholder="1 сентября 2023">
+            </div>
             <span class="dates__message">На эти даты есть свободные номера. Пока есть.</span>
           </li>
         </ul>
