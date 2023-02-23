@@ -1620,7 +1620,6 @@ body {
 }
 
 .modal {
-  border: 1px solid red;
   position: relative;
   width: 577px;
   margin: auto;
@@ -1654,6 +1653,7 @@ body {
 .modal__close {
   width: 52px;
   height: 52px;
+  margin-right: -19px;
   border: none;
   border-radius: 100%;
   background-color: #F2F2F2;
@@ -1679,16 +1679,20 @@ body {
 }
 
 .dates {
-  border: 1px solid green;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.dates__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
 .dates__item-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 .dates__item-label {
@@ -1700,6 +1704,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .dates__item-input {
@@ -1714,6 +1719,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .dates__item-input:placeholder-shown {
@@ -1726,17 +1732,38 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.dates__item-input:hover {
+  background-color: #E6E6E6;
+}
+
+.dates__item-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.dates__item-input:not(:placeholder-shown) {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
 }
 
 .dates__message {
-  width: 280px;
+  width: 332px;
+  display: block;
+  margin: 0 auto;
+  margin-right: 88px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+}
+
+.dates__message--mistake {
+  color: #FF5757;
 }
 
 .tourists {
