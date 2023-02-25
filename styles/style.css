@@ -498,7 +498,7 @@ body {
   width: 592px;
   margin: 0 auto;
   padding-bottom: 55px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -809,7 +809,7 @@ body {
 .filter__title {
   margin: 0;
   padding-bottom: 8px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -895,7 +895,7 @@ body {
   margin-left: 1px;
   padding: 0;
   list-style: none;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1540,7 +1540,7 @@ body {
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1953,7 +1953,7 @@ body {
   padding-right: 10px;
   padding-bottom: 18px;
   padding-left: 10px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
