@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -229,18 +230,16 @@
               </button>
             </div>
           </li>
-          <li class="tourists__item">
-            <label class="tourists__item-label label-children" for="children">
-              <div class="tooltip">
+          <li class="tourists__item tourists__item-info">
+            <label class="tourists__item-label label-children" for="children">Дети:</label>
+            <div class="tooltip">
+              <div class="tooltip__content">
                 <p class="tooltip__text">
-                  Укажите количество детей, <br>
-                  которые будут с вами, возраст<br>
-                  которых от 6 до 18 лет. Дети<br>
-                  до 6 лет размещаются бесплатно.
+                  Укажите количество детей, <br>которые будут с вами, возраст<br>
+                  которых от 6 до 18 лет. Дети<br>до 6 лет размещаются бесплатно.
                 </p>
               </div>
-              Дети:
-            </label>
+            </div>
             <div class="tourists__item-content">
               <input class="tourists__item-input children" id="children" type="text" name="children" placeholder="2">
               <button class="tourists__button tourists__button-reduce" type="button">
