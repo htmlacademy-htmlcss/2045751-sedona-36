@@ -218,24 +218,28 @@
         </ul>
         <ul class="tourists">
           <li class="tourists__item">
-            <label for="adults">Взрослые:</label>
-            <input class="adults" id="adults" type="text" name="adults" placeholder="2">
-            <button class="tourists__button tourists__button--reduce" type="button">
-              <span class="visually-hidden">Кнопка минуса для убавления количества туристов</span>
-            </button>
-            <button class="tourists__button tourists__button--add" type="button">
-              <span class="visually-hidden">Кнопка плюса для добавления количества туристов</span>
-            </button>
+            <label class="tourists__item-label" for="adults">Взрослые:</label>
+            <div class="tourists__item-content">
+              <input class="tourists__item-input adults" id="adults" type="text" name="adults" placeholder="2">
+              <button class="tourists__button tourists__button-reduce" type="button">
+                <span class="visually-hidden">Кнопка минуса для убавления количества туристов</span>
+              </button>
+              <button class="tourists__button tourists__button-add" type="button">
+                <span class="visually-hidden">Кнопка плюса для добавления количества туристов</span>
+              </button>
+            </div>
           </li>
-          <li class="tourists__item">
-            <label for="children">Дети:</label>
-            <input class="children" id="children" type="text" name="children" placeholder="2">
-            <button class="tourists__button tourists__button--reduce" type="button">
-              <span class="visually-hidden">Кнопка минуса для убавления количества туристов</span>
-            </button>
-            <button class="tourists__button tourists__button--add" type="button">
-              <span class="visually-hidden">Кнопка плюса для добавления количества туристов</span>
-            </button>
+          <li class="tourists__item tourists__item">
+            <label class="tourists__item-label label-children" for="children">Дети:</label>
+            <div class="tourists__item-content">
+              <input class="tourists__item-input children" id="children" type="text" name="children" placeholder="2">
+              <button class="tourists__button tourists__button-reduce" type="button">
+                <span class="visually-hidden">Кнопка минуса для убавления количества туристов</span>
+              </button>
+              <button class="tourists__button tourists__button-add" type="button">
+                <span class="visually-hidden">Кнопка плюса для добавления количества туристов</span>
+              </button>
+            </div>
           </li>
         </ul>
         <button class="modal__search" type="button">Найти</button>
