@@ -1805,10 +1805,6 @@ body {
   cursor: pointer;
 }
 
-.label-children {
-  margin-left: 5px;
-}
-
 .tourists__item-content {
   position: relative;
   width: 111px;
@@ -1884,5 +1880,64 @@ body {
 .tourists__button-add:active {
   background-image: url("../images/icon-modal-plus-active.svg");
   background-size: 20px 20px;
+}
+
+.label-children {
+  position: relative;
+  margin-left: 5px;
+}
+
+.label-children:after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #83B3D3;
+  background-image: url("../images/icon-modal-tooltip-info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: -38px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 214px;
+  display: none;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-right: 19px;
+  padding-bottom: 23px;
+  padding-left: 22px;
+  top: 41px;
+  left: -55px;
+}
+
+.tooltip:before {
+  content: "";
+  width: 19px;
+  height: 9px;
+  background-image: url("../images/icon-modal-tooltip-indicator.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-children:hover .tooltip {
+  display: block;
+}
+
+.tooltip__text {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 /* Конец стилизации MODAL-CONTAINER */

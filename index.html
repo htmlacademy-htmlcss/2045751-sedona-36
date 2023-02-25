@@ -218,7 +218,7 @@
         </ul>
         <ul class="tourists">
           <li class="tourists__item">
-            <label class="tourists__item-label" for="adults">Взрослые:</label>
+            <label class="tourists__item-label label-adults" for="adults">Взрослые:</label>
             <div class="tourists__item-content">
               <input class="tourists__item-input adults" id="adults" type="text" name="adults" placeholder="2">
               <button class="tourists__button tourists__button-reduce" type="button">
@@ -229,8 +229,18 @@
               </button>
             </div>
           </li>
-          <li class="tourists__item tourists__item">
-            <label class="tourists__item-label label-children" for="children">Дети:</label>
+          <li class="tourists__item">
+            <label class="tourists__item-label label-children" for="children">
+              <div class="tooltip">
+                <p class="tooltip__text">
+                  Укажите количество детей, <br>
+                  которые будут с вами, возраст<br>
+                  которых от 6 до 18 лет. Дети<br>
+                  до 6 лет размещаются бесплатно.
+                </p>
+              </div>
+              Дети:
+            </label>
             <div class="tourists__item-content">
               <input class="tourists__item-input children" id="children" type="text" name="children" placeholder="2">
               <button class="tourists__button tourists__button-reduce" type="button">
