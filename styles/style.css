@@ -1653,7 +1653,7 @@ body {
 .modal__close {
   width: 52px;
   height: 52px;
-  margin-right: -19px;
+  margin-right: -18px;
   border: none;
   border-radius: 100%;
   background-color: #F2F2F2;
@@ -1704,9 +1704,8 @@ body {
   background-image: url("../images/icon-modal-calendar.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 50%;
+  top: 16px;
   right: 18px;
-  transform: translateY(-50%);
 }
 
 .dates__item-label {
@@ -1915,6 +1914,10 @@ body {
   left: -55px;
 }
 
+.label-children:hover .tooltip {
+  display: block;
+}
+
 .tooltip:before {
   content: "";
   width: 19px;
@@ -1927,10 +1930,6 @@ body {
   transform: translateX(-50%);
 }
 
-.label-children:hover .tooltip {
-  display: block;
-}
-
 .tooltip__text {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
@@ -1939,5 +1938,35 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.modal__search-button {
+  min-width: 100%;
+  margin-top: 48px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 10px;
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.modal__search-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal__search-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
 /* Конец стилизации MODAL-CONTAINER */
