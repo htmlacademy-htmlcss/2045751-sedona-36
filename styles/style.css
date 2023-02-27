@@ -552,7 +552,7 @@ body {
 }
 
 .subscribe__title {
-  width: 404px;
+  width: 406px;
   margin: 0 auto;
   padding-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
@@ -1169,6 +1169,11 @@ body {
 
 .cost__input::placeholder {
   color: #000000;
+}
+
+.cost__input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .cost__input:placeholder-shown {
