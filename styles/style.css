@@ -1583,11 +1583,11 @@ body {
   color: #ffffff;
 }
 
-.pagination__item-link:hover {
+.pagination__item-link:not(.pagination__item-link--active):hover {
   background-color: #68A2CA;
 }
 
-.pagination__item-link:active {
+.pagination__item-link:not(.pagination__item-link--active):active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
