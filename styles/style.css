@@ -1326,6 +1326,7 @@ body {
   border-radius: 4px;
   outline: none;
   appearance: none;
+  background-color: #ffffff;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
