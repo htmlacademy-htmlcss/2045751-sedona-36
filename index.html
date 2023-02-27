@@ -128,7 +128,7 @@
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__item-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe__form" action="//echo.htmlacademy.ru" method="POST">
-          <input class="subscribe__form-input" type="email" placeholder="Ваш e-mail">
+          <input class="subscribe__form-input" type="email" placeholder="Ваш e-mail" required>
           <button class="subscribe__form-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -205,14 +205,14 @@
           <li class="dates__item">
             <div class="dates__item-content">
               <label class="dates__item-label" for="arrival-date">Дата заезда:</label>
-              <input class="dates__item-input arrival-date" id="arrival-date" type="text" name="arrival-date" placeholder="Укажите дату">
+              <input class="dates__item-input arrival-date" id="arrival-date" type="text" name="arrival-date" placeholder="Укажите дату" required>
             </div>
             <span class="dates__message dates__message--mistake">Мы не можем отправить вас в прошлое.</span>
           </li>
           <li class="dates__item">
             <div class="dates__item-content">
               <label class="dates__item-label" for="departure-date">Дата выезда:</label>
-              <input class="dates__item-input departure-date" id="departure-date" type="text" name="departure-date" placeholder="Укажите дату">
+              <input class="dates__item-input departure-date" id="departure-date" type="text" name="departure-date" placeholder="Укажите дату" required>
             </div>
             <span class="dates__message">На эти даты есть свободные номера. Пока есть.</span>
           </li>
@@ -221,7 +221,7 @@
           <li class="tourists__item">
             <label class="tourists__item-label label-adults" for="adults">Взрослые:</label>
             <div class="tourists__item-content">
-              <input class="tourists__item-input adults" id="adults" type="text" name="adults" placeholder="2">
+              <input class="tourists__item-input adults" id="adults" type="text" name="adults" placeholder="2" required>
               <button class="tourists__button tourists__button-reduce" type="button">
                 <span class="visually-hidden">Кнопка минуса для убавления количества туристов</span>
               </button>
@@ -241,7 +241,7 @@
               </div>
             </div>
             <div class="tourists__item-content">
-              <input class="tourists__item-input children" id="children" type="text" name="children" placeholder="2">
+              <input class="tourists__item-input children" id="children" type="text" name="children" placeholder="2" required>
               <button class="tourists__button tourists__button-reduce" type="button">
                 <span class="visually-hidden">Кнопка минуса для убавления количества туристов</span>
               </button>
