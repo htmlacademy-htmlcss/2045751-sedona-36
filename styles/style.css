@@ -1008,14 +1008,6 @@ body {
   color: #7EA7C7;
 }
 
-.type-housing__item-label:active {
-  color: #9BB9D2;
-}
-
-.type-housing__item-label:hover .type-housing__item-radio {
-  background-image: url("../images/radio-hover.svg");
-}
-
 .type-housing__input {
   position: absolute;
   appearance: none;
@@ -1048,6 +1040,15 @@ body {
   margin-left: -39px;
   background-image: url("../images/radio-checked-focus.svg");
   background-repeat: no-repeat;
+}
+
+.type-housing__item-label:hover .type-housing__item-radio {
+  background-image: url("../images/radio-checked-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.type-housing__item-label:active {
+  color: #9BB9D2;
 }
 
 .type-housing__item-label:active .type-housing__item-radio {
