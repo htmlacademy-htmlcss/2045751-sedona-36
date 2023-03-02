@@ -169,6 +169,22 @@ body {
   fill: #000000;
 }
 
+.user-menu__item:hover .user-menu__item-img {
+  fill: rgb(0, 0, 0, 0.6);
+}
+
+.user-menu__item:active .user-menu__item-img {
+  fill: rgb(0, 0, 0, 0.2);
+}
+
+.user-menu__item:hover .user-menu__count {
+  background-color: #83B3D3;
+}
+
+.user-menu__item:active .user-menu__count {
+  background-color: #E5E5E5;
+}
+
 .user-menu__count {
   position: absolute;
   width: 20px;
