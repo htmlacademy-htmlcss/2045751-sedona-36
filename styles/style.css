@@ -126,6 +126,14 @@ body {
   left: 0;
 }
 
+.nav__item-link:hover:not(.nav__item-link--active) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__item-link:active:not(.nav__item-link--active) {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .user-menu {
   width: 268px;
   display: flex;
