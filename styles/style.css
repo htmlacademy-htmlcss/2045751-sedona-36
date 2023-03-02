@@ -75,6 +75,14 @@ body {
   display: block;
 }
 
+.logo__img:hover:not(.logo__img--active) {
+  filter: opacity(80%);
+}
+
+.logo__img:active:not(.logo__img--active) {
+  filter: opacity(40%);
+}
+
 .nav {
   display: flex;
 }
